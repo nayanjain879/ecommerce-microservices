@@ -1,0 +1,17 @@
+spring:spring:
+  application:
+    name: order-service
+  autoconfigure:
+    exclude: org.springframework.cloud.config.server.config.ConfigServerAutoConfiguration
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: order-management-service
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        native:
+          searchLocations: file:/app/order-service/runtime/resources
